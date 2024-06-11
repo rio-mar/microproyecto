@@ -1,0 +1,548 @@
+/*
+#EFF7CF
+#BAD9B5
+#ABA361
+#732C2C
+#420C14
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+/* deslizarce en la pagina */
+html{
+    scroll-behavior: smooth;
+    min-width: 1000px;
+}
+header{
+    
+    min-width: 1000px;
+}
+
+h1 {
+  color: hsla(0, 0%, 0%, .9);
+  font: normal 140px Varela Round, sans-serif;
+  height: 140px;
+  left: 0;
+  letter-spacing: 5px;
+  margin: -80px 0 0 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 35%;
+  width: 100%;
+  animation: move linear 2000ms infinite;  
+}
+
+@keyframes move {
+    0% {
+        text-shadow:
+          4px -4px 0 hsla(0, 100%, 50%, 1), 
+          3px -3px 0 hsla(0, 100%, 50%, 1), 
+          2px -2px 0 hsla(0, 100%, 50%, 1), 
+          1px -1px 0 hsla(0, 100%, 50%, 1),
+          -4px 4px 0 hsla(180, 100%, 50%, 1), 
+          -3px 3px 0 hsla(180, 100%, 50%, 1), 
+          -2px 2px 0 hsla(180, 100%, 50%, 1), 
+          -1px 1px 0 hsla(180, 100%, 50%, 1)
+        ;
+      }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 hsla(180, 100%, 50%, 1), 
+      -3px -3px 0 hsla(180, 100%, 50%, 1), 
+      -2px -2px 0 hsla(180, 100%, 50%, 1), 
+      -1px -1px 0 hsla(180, 100%, 50%, 1),
+      4px 4px 0 hsla(0, 100%, 50%, 1), 
+      3px 3px 0 hsla(0, 100%, 50%, 1), 
+      2px 2px 0 hsla(0, 100%, 50%, 1), 
+      1px 1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 hsla(0, 100%, 50%, 1), 
+      -3px 3px 0 hsla(0, 100%, 50%, 1), 
+      -2px 2px 0 hsla(0, 100%, 50%, 1), 
+      -1px 1px 0 hsla(0, 100%, 50%, 1),
+      4px -4px 0 hsla(180, 100%, 50%, 1), 
+      3px -3px 0 hsla(180, 100%, 50%, 1), 
+      2px -2px 0 hsla(180, 100%, 50%, 1), 
+      1px -1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 hsla(180, 100%, 50%, 1), 
+      3px 3px 0 hsla(180, 100%, 50%, 1), 
+      2px 2px 0 hsla(180, 100%, 50%, 1), 
+      1px 1px 0 hsla(180, 100%, 50%, 1),
+      -4px -4px 0 hsla(0, 100%, 50%, 1), 
+      -3px -3px 0 hsla(0, 100%, 50%, 1), 
+      -2px -2px 0 hsla(0, 100%, 50%, 1), 
+      -1px -1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }  
+}
+
+
+
+
+
+
+
+/* Animation property */
+/* animacion del boton */
+
+button {
+animation: wiggle 2s linear infinite;
+}
+
+
+@keyframes wiggle {
+0%, 7% {
+    transform: rotateZ(0);
+}
+15% {
+    transform: rotateZ(-15deg);
+}
+20% {
+    transform: rotateZ(10deg);
+}
+25% {
+    transform: rotateZ(-10deg);
+}
+30% {
+    transform: rotateZ(6deg);
+}
+35% {
+    transform: rotateZ(-4deg);
+}
+40%, 100% {
+    transform: rotateZ(0);
+}
+}
+
+button {
+position: relative;
+left: calc(50% - 3em);
+top: calc(50% - 2em);
+
+height: 4em;
+width: 7em;
+
+background: #444;
+background: linear-gradient(top, #555, #333);
+border: none;
+border-top: 3px solid orange;
+border-radius: 0 0 0.2em 0.2em;
+color: #fff;
+font-family: Helvetica, Arial, Sans-serif;
+font-size: 1em;
+transform-origin: 50% 5em;
+cursor: pointer;
+}
+.button:hover {
+    background-color: #426644; /* Color de fondo más oscuro al pasar por encima */
+}
+
+
+
+/*Se normaliza*/
+section{
+    text-decoration: double;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*se utiliza para alinear verticalmente un elemento en relación con la línea de base de su elemento padre.*/
+    vertical-align: baseline;
+}
+
+body{
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #420C14;
+    position: fixed;
+    width: 100%;
+    /*se utiliza para controlar el apilamiento y el orden de los elementos posicionados en una página web. Especifica la posición en el eje Z, que es el eje que se extiende hacia el frente y hacia atrás de la pantalla.*/
+    z-index: 100 ;
+}
+
+.logo{
+    margin-left: 30px;
+}
+.logo a{
+    text-decoration: solid;
+    color: #EFF7CF;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.navbar{
+display: flex;
+margin-right: 10px;
+}
+.navbar a{
+    display: block;
+    padding: 20px 20px;
+    color: #EFF7CF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.navbar a:hover{
+
+    background:#732C2C ;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh !important;
+    
+    background: url(../img/fondo_inicio.avif)    no-repeat center;
+    background-size: cover;
+    
+}
+.title{
+    
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+   
+}
+p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #EFF7CF;
+    padding: 0 100px;
+    text-decoration: double;
+    
+}
+.boton{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid color(#EFF7CF);
+    color: black;
+    text-decoration: none;
+    background: #ABA361;
+}
+.boton:hover{
+    /*El color que quieran*/
+    background:none ;
+}
+.boton-home{
+    display: flex;
+}
+.boton-home a{
+    margin: 0 10px;
+}
+.contenido{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros{
+    background-color: #849c80;
+}
+
+.caracteristicas{
+    padding: 30px;
+    background: #BDA076;
+}
+
+
+
+
+
+
+
+.favoritos{
+   height: 120vh;
+    background: #5B3C2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorimg{
+    max-width: 50%;
+    position: relative;
+   
+}
+.myslides{
+   display: none;
+}
+.myslides img {
+    width: 400px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+ 
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+.prev:hover,.next:hover{
+background:#732C2C ;
+}
+.elementos{
+    text-align: center;
+}
+.quadrate{
+    cursor: pointer;
+    height: 4px;
+    width: 50px;
+    margin: 0 2px;
+    background-color: #333;
+    display: inline-block;
+    transition-duration: 0.6 ease;
+    border-radius:  2px solid black; 
+}
+
+.active, .quadrate:hover{
+    background: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+
+
+.Citas{
+    background-color: #849c80;
+}
+.caja{
+    background-color: #849c80;
+    padding: 20px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cita{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgba(255, 166, 0, 0); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      disappear 0s step-end 5;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes disappear {
+    from, to { border-color: transparent }
+  }
+  
+.box-contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.box-contenedor .box{
+    height: 18rem;
+    width: 20rem;
+    background: #A19F73;
+    text-align:center ;
+    border-radius: 1rem;
+    box-shadow: 0 .3 5rem rgb(0, 0,0,.5);
+    margin: 2rem;
+}
+
+.box-contenedor .box i{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+   
+}
+
+.box-contenedor .box h3{
+    font-size: 20px;
+    color: #732C2C; 
+    
+}
+.box-contenedor .box p{
+    font-size: 16px;
+    padding: 15px;
+}
+
+.grande{
+    width: 60rem !important;
+    height: 20rem !important;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+}
+
+
+.plan{
+background:#5B3C2A ;
+}
+.subscribete{
+    background: #A07F6A;
+}
+  
+/*
+#EFF7CF
+#BAD9B5
+#ABA361
+#732C2C
+#420C14
+*/
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #aba888;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #732C2C;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #420C14;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:7px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	display:block;
+}
+footer{
+    background: #420C14;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+@media(max-width: 900px){
+	.title{
+		margin-bottom: 0;
+		font-size: 40px;
+	}
+    .caracteristicas{
+        height: 120vh;
+    }
+	
+	.navbar{
+        display: none;
+    }
+    .contenedorimg{
+        width: 100%;
+    }
+}
+@media  (max-width: 1000px) {
+    
+    .next{
+        
+        left: 500px;
+        border-radius:3px 0 0 3px;
+    
+    }
+    .prev{
+        right: 500px;
+        border-radius:3px 0 0 3px;
+    
+    }
+}
