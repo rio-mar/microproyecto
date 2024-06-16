@@ -1,6 +1,10 @@
 //tipos de plan
-const basico = 300;
-const premium = 800;
+const basico = 300;//bolivares
+const premium = 800;//bolivares
+
+document.getElementById('basic').textContent = basico;
+document.getElementById('premium').textContent = premium;
+
 // Realiza una solicitud a la API para obtener datos sobre el dólar
 fetch('https://pydolarvenezuela-api.vercel.app/api/v1/dollar?page=bcv')
   .then(response => response.json())
